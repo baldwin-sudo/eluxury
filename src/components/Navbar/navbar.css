@@ -1,0 +1,88 @@
+.nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 1rem;
+  width: 100vw;
+  height: 5rem;
+}
+
+.nav-bar ul {
+  list-style: none;
+}
+.nav-brand {
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  font-size: 200%;
+  transition: transform 0.3s ease-in;
+}
+.nav-brand:hover {
+  transform: scale(1.1);
+}
+.icon-crown {
+  position: relative;
+}
+.icon-crown::after {
+  position: absolute;
+  content: "";
+  background: url("../../assets/crown.png");
+  background-position: center;
+  background-size: contain;
+
+  top: -5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+.nav-items {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  font-size: 150%;
+  display: flex;
+  gap: 3rem;
+}
+.nav-icons {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  top: 30px;
+  left: 90%;
+  font-size: 150%;
+}
+
+.nav-item {
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+}
+.nav-item:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+.selected-nav-item::after {
+  content: "";
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+}

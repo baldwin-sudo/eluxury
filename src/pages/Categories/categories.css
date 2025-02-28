@@ -1,0 +1,107 @@
+.categories-container {
+  /* border: solid 1px black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  gap: 3rem;
+}
+.category-item {
+  position: relative;
+  transition: transform 0.3s ease-out;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 10px 0px #00000077;
+  /* border: 1px solid red; */
+}
+@keyframes slidefromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slidefromRight {
+  0% {
+    transform: translateX(+100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidefromBottom {
+  0% {
+    transform: translateY(+100vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes inverseslidefromLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+@keyframes inverseslidefromRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(+100vw);
+  }
+}
+
+@keyframes inverseslidefromBottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(+100vw);
+  }
+}
+.inverse-categ-men {
+  animation: inverseslidefromLeft 0.9s ease-out forwards;
+}
+.inverse-categ-women {
+  animation: inverseslidefromBottom 0.9s ease-out forwards;
+}
+.inverse-categ-jew {
+  animation: inverseslidefromRight 0.9s ease-out forwards;
+}
+.categ-men {
+  animation: slidefromLeft 0.9s ease-out forwards;
+  animation-fill-mode: none;
+}
+.categ-women {
+  animation: slidefromBottom 0.7s ease-out forwards;
+  animation-fill-mode: none;
+}
+.categ-jew {
+  animation: slidefromRight 0.9s ease-out forwards;
+  animation-fill-mode: none;
+}
+.category-item:hover {
+  transform: scale(1.05);
+}
+.category-item img {
+  padding: 0;
+  height: 30rem;
+}
+.category-title {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  color: var(--secondary-color);
+  padding: 0.5rem 0;
+  font-size: 150%;
+  background-color: rgba(0, 0, 0, 0.829);
+  display: flex;
+  justify-content: center;
+}

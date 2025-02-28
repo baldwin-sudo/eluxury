@@ -1,0 +1,49 @@
+.clothes-card {
+  box-sizing: border-box;
+  position: relative;
+  /* flex: 0 0 28%; */
+  width: 20rem;
+  height: 30rem;
+  border: 1px solid black;
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: transform 0.5s ease-in-out;
+}
+.clothes-img-overlay {
+  box-sizing: border-box;
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0%;
+  height: 0;
+  width: 100%;
+  transition: height 0.5s ease-in-out;
+  padding: 1rem;
+}
+
+.clothes-card:hover {
+  transform: scale(1.1) rotateY(180deg);
+}
+.clothes-card:hover * {
+  display: none;
+}
+.clothes-card:hover .clothes-img-overlay {
+  display: block;
+  transform: rotateY(-180deg);
+  height: 100%;
+}
+.clothes-card img {
+  position: absolute;
+  top: 20%;
+  height: 18rem;
+  width: 16rem;
+  z-index: 999;
+}
+.price {
+  position: absolute;
+  top: 90%;
+}

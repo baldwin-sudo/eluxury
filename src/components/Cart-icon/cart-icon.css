@@ -1,0 +1,44 @@
+.icon-cart {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  background: url("../../assets/shopping-cart.png");
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.2s ease-in;
+}
+
+.icon-cart:hover {
+  opacity: 0.7;
+  transform: scale(1.15);
+}
+
+.icon-cart::after {
+  content: attr(data-number);
+  color: white;
+
+  position: absolute;
+  top: -55%;
+  left: 55%;
+  transform: translateX(-50%);
+  height: 20px;
+  width: 20px;
+  font-weight: bold;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; /* Ajuste la taille du texte */
+}
+
+.icon-heart {
+  height: 30px;
+  width: 30px;
+  /* background: url("../../assets/shopping-cart.png"); */
+  transition: transform 0.2s ease-in-out;
+}
+.icon-heart:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
