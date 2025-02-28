@@ -2,6 +2,8 @@
   "name": "eluxury-frontend",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://baldwin-sudo.github.io/"
+,
   "type": "module",
   "scripts": {
     "dev": "vite",
