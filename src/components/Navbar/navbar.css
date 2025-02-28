@@ -27,7 +27,7 @@
 .icon-crown::after {
   position: absolute;
   content: "";
-  background: url("../../assets/crown.png");
+  background: url("/assets/crown.png");
   background-position: center;
   background-size: contain;
 

@@ -2,7 +2,7 @@
   height: 30px;
   width: 30px;
   position: relative;
-  background: url("../../assets/shopping-cart.png");
+  background: url("/assets/shopping-cart.png");
   background-size: contain;
   background-position: center;
   transition: transform 0.2s ease-in;
