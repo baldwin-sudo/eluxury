@@ -34,7 +34,7 @@
   margin-top: 5rem;
   width: 17rem;
   height: 22rem;
-  background-image: url("../../assets/home2.jpg");
+  background-image: url("/assets/home2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@
 .home-right {
   width: 30rem;
   height: 40rem;
-  background-image: url("../../assets/home1.jpg");
+  background-image: url("/assets/home1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

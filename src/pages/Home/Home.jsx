@@ -8,7 +8,7 @@ export default function Home() {
           <p className="home-title title1">
             <img
               className="home-title-icon "
-              src="src/assets/crown.png"
+              src="/assets/crown.png"
               alt="crown"
             />
             luxurious clothes
@@ -16,7 +16,7 @@ export default function Home() {
           <p className="home-title title2">
             <img
               className="home-title-icon"
-              src="src/assets/crown.png"
+              src="/assets/crown.png"
               alt="crown"
             />
             anywhere
@@ -24,7 +24,7 @@ export default function Home() {
           <p className="home-title title3">
             <img
               className="home-title-icon"
-              src="src/assets/crown.png"
+              src="/assets/crown.png"
               alt="crown"
             />
             anytime

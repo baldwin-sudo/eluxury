@@ -2,8 +2,7 @@
   "name": "eluxury-frontend",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://baldwin-sudo.github.io/"
-,
+  "homepage": "https://baldwin-sudo.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^1.8.1",
+    "netlify-cli": "^19.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0"
