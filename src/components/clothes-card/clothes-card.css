@@ -11,7 +11,7 @@
   gap: 2rem;
   align-items: center;
   padding: 1rem 2rem;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 /* .clothes-img-overlay {
   box-sizing: border-box;
@@ -26,7 +26,7 @@
 } */
 
 .clothes-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .clothes-card:hover .clothes-img-overlay {
@@ -39,7 +39,7 @@
   height: 18rem;
   width: 16rem;
   z-index: 999;
-  box-shadow: 4px 4px 10px 0px rgb(136, 136, 136);
+  box-shadow: 0px 0px 14px -10px rgb(136, 136, 136);
   border-radius: 10px;
   padding: 1rem;
 }
@@ -59,12 +59,12 @@
   top: 100%;
   right: 100%;
 
-  transform: translateY(-100%) translateX(100%);
+  transform: translateY(-150%) translateX(200%);
 }
 .icon-add-cart {
   position: absolute;
   top: 100%;
-  transform: translateX(-100%) translateY(-100%);
+  transform: translateX(-200%) translateY(-150%);
   height: 30px;
   width: 30px;
   left: 100%;
