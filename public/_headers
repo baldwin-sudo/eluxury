@@ -1,0 +1,10 @@
+/* 
+  Ensure `index.html` is always fresh (prevents stale versions)
+*/
+  Cache-Control: no-cache
+
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
